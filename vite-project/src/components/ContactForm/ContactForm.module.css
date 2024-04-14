@@ -1,0 +1,12 @@
+.form {
+  gap: 4px;
+}
+
+.field {
+  padding: 4px;
+}
+
+.formNewContact {
+  display: flex;
+  flex-direction: row;
+}
