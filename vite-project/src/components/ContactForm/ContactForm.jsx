@@ -30,20 +30,20 @@ export default function ContactForm({ onAdd }) {
       onSubmit={handleSubmit}
       validationSchema={validationSchema}
     >
-          <Form className={css.formNewContact}>
-              <div>
-                  <h1>Phonebook</h1>
-              
-        <label htmlFor="name">Name</label>
-        <Field className={css.field} type="text" id="name" name="name" />
-        <ErrorMessage name="name" as="span" className={css.error} />
+      <Form className={css.formNewContact}>
+        <div>
+          <h1>Phonebook</h1>
 
-        <label htmlFor="number">Number</label>
-        <Field className={css.field} type="text" id="number" name="number" />
-        <ErrorMessage name="number" as="span" className={css.error} />
+          <label htmlFor="name">Name</label>
+          <Field className={css.field} type="text" id="name" name="name" />
+          <ErrorMessage name="name" as="span" className={css.error} />
 
-                  <button type="submit">Add contact</button>
-                  </div>
+          <label htmlFor="number">Number</label>
+          <Field className={css.field} type="text" id="number" name="number" />
+          <ErrorMessage name="number" as="span" className={css.error} />
+
+          <button type="submit">Add contact</button>
+        </div>
       </Form>
     </Formik>
   );
